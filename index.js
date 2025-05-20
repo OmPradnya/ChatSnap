@@ -23,17 +23,6 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({ extended: true })); //for parsing
 app.use(methodOverride("_method"));
 
-// let chat1 = new Chat({
-//   from: "neha",
-//   to: "Priya",
-//   msg: "send me your exam sheets",
-//   created_at: new Date(),
-// });
-
-// chat1.save().then((res) => {
-//   console.log(res);
-// });
-
 //------------index route-----------------
 
 app.get("/chats", async (req, res) => {
@@ -95,8 +84,8 @@ app.get(
 
 app.get("/chats/:id/edit", async (req, res) => {
   try {
-    let { id } = req.params; //id nikalnekeliye
-    let chat = await Chat.findById(id); //db mai search karnekeliye
+    let { id } = req.params; 
+    let chat = await Chat.findById(id);
     res.render("edit.ejs", { chat });
   } catch (err) {
     next(err);
