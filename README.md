@@ -1,4 +1,4 @@
-# urbanYatri
+# ChatSnap
 
 **Simple CRUD WebApp**
 
