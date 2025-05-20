@@ -24,24 +24,6 @@ let allChats = [
     msg: "catchup this weekend>",
     created_at: new Date(),
   },
-  {
-    from: "piyush",
-    to: "aviral",
-    msg: "cant get over her",
-    created_at: new Date(),
-  },
-  {
-    from: "sakshi",
-    to: "aviral",
-    msg: "you cheated on me",
-    created_at: new Date(),
-  },
-  {
-    from: "arya",
-    to: "om",
-    msg: "i love you 3000",
-    created_at: new Date(),
-  },
 ];
 
 Chat.insertMany(allChats);
