@@ -1,6 +1,6 @@
 # ChatSnap
 
-**Simple CRUD WebApp**
+**CRUD WebApp**
 
  -Built a simple chat interface using RESTful APIs to create, delete, edit conversations. Includes timestamps for message creation. 
 
